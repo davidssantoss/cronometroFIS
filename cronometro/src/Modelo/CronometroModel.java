@@ -51,13 +51,7 @@ public class CronometroModel {
 
     public ActionListener getCronoAcciones() {
         return cronoAcciones;
-    }
-
-    public void setCronoAcciones(ActionListener cronoAcciones) {
-        this.cronoAcciones = cronoAcciones;
-    }
-    
-    
+    }      
 
     public int getH() {
         return h;

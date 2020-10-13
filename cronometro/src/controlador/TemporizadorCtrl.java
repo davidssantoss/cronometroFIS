@@ -52,6 +52,21 @@ public class TemporizadorCtrl implements ActionListener {
             }
             int sec = Integer.parseInt(t.getTxtSec().getText());
             tm.setSecond(sec);
+            t.getBtnStart().setEnabled(false);
+            t.getBtnRestart().setEnabled(true);
+            start(0, 1000);
+        }
+        if (e.getSource() == t.getBtnRestart()) {
+            timer.cancel();
+            timer.purge();
+            t.getLblTime().setText("00:00:00");
+            t.getTxtHour().setText("00");
+            t.getTxtMin().setText("00");
+            t.getTxtSec().setText("00");
+            tm.setHour(0);
+            tm.setMinute(0);
+            tm.setSecond(0);
+            t.getBtnStart().setEnabled(true);
             start(0, 1000);
         }
 
@@ -90,7 +105,7 @@ public class TemporizadorCtrl implements ActionListener {
     public void start(int timeout, int interval) {
         timer.schedule(task, timeout, interval);
     }
-    
+
     private boolean isInteger(String numero) {
         try {
             Integer.parseInt(numero);

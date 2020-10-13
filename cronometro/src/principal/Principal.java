@@ -14,7 +14,7 @@ import GUI.TemporizadorUI;
  */
 public class Principal {
     public static void main(String[] args) {
-        //CronometroUI c = new CronometroUI();
+        CronometroUI c = new CronometroUI();
         TemporizadorUI t = new TemporizadorUI();
     }
     

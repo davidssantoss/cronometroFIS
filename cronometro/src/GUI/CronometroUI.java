@@ -35,7 +35,7 @@ public class CronometroUI extends JFrame {
     private JLabel lblTitle = new JLabel();
     private JScrollPane scTimes;
     private JTextArea tiempos = new JTextArea();
-    public Font font = new Font("Agency FB", Font.BOLD, 28);
+    private Font font = new Font("Agency FB", Font.BOLD, 28);
 
     public CronometroUI() {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -97,58 +97,24 @@ public class CronometroUI extends JFrame {
         return btnStart;
     }
 
-    public void setBtnStart(JButton btnStart) {
-        this.btnStart = btnStart;
-    }
-
     public JButton getBtnStop() {
         return btnStop;
     }
-
-    public void setBtnStop(JButton btnStop) {
-        this.btnStop = btnStop;
-    }
-
+    
     public JButton getBtnPause() {
         return btnPause;
-    }
-
-    public void setBtnPause(JButton btnPause) {
-        this.btnPause = btnPause;
     }
 
     public JLabel getLblTime() {
         return lblTime;
     }
 
-    public void setLblTime(JLabel lblTime) {
-        this.lblTime = lblTime;
-    }
-
-    public JScrollPane getScTimes() {
-        return scTimes;
-    }
-
-    public void setScTimes(JScrollPane scTimes) {
-        this.scTimes = scTimes;
-    }
-
     public JTextArea getTiempos() {
         return tiempos;
     }
 
-    public void setTiempos(JTextArea tiempos) {
-        this.tiempos = tiempos;
-    }
-
     public Timer getT() {
         return t;
-    }
-
-    public void setT(Timer t) {
-        this.t = t;
-    }
-    
-    
+    }      
 
 }

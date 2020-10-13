@@ -31,7 +31,9 @@ public class TemporizadorUI extends JFrame {
     private JTextField txtMin = new JTextField(2);
     private JTextField txtSec = new JTextField(2);
     private JButton btnStart = new JButton();
-    public Font font = new Font("Agency FB", Font.BOLD, 28);
+    private JButton btnRestart = new JButton();
+
+    private Font font = new Font("Agency FB", Font.BOLD, 28);
 
     public TemporizadorUI() {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -56,6 +58,7 @@ public class TemporizadorUI extends JFrame {
         c.add(txtMin);
         c.add(txtSec);
         c.add(btnStart);
+        c.add(btnRestart);
 
         // Posicion de los componentes
         lblTitle.setBounds(15, 20, 250, 25);
@@ -66,7 +69,9 @@ public class TemporizadorUI extends JFrame {
         txtMin.setBounds(180, 100, 50, 25);
         lblSec.setBounds(240, 100, 50, 25);
         txtSec.setBounds(290, 100, 50, 25);
-        btnStart.setBounds(120, 180, 100, 25);
+        btnStart.setBounds(55, 180, 100, 25);
+        btnRestart.setBounds(200, 180, 100, 25);
+
         //Setteando texto en los componentes
         lblTitle.setText("TEMPORIZADOR FIS");
         lblHour.setText("Hora:");
@@ -78,10 +83,13 @@ public class TemporizadorUI extends JFrame {
         lblTime.setText("00:00:00");
         lblTime.setFont(font);
         btnStart.setText("Iniciar");
+        btnRestart.setText("Reiniciar");
 
         // Agregandole el listener a los botones
         btnStart.addActionListener(ctrl);
         btnStart.setEnabled(true);
+        btnRestart.addActionListener(ctrl);
+        btnRestart.setEnabled(false);
 
     }
 
@@ -90,45 +98,28 @@ public class TemporizadorUI extends JFrame {
      * Getter and Setter de los componentes
     ***********************************************************
      */
-
     public JLabel getLblTime() {
         return lblTime;
-    }
-
-    public void setLblTime(JLabel lblTime) {
-        this.lblTime = lblTime;
     }
 
     public JTextField getTxtHour() {
         return txtHour;
     }
 
-    public void setTxtHour(JTextField txtHour) {
-        this.txtHour = txtHour;
-    }
-
     public JTextField getTxtMin() {
         return txtMin;
-    }
-
-    public void setTxtMin(JTextField txtMin) {
-        this.txtMin = txtMin;
     }
 
     public JTextField getTxtSec() {
         return txtSec;
     }
 
-    public void setTxtSec(JTextField txtSec) {
-        this.txtSec = txtSec;
-    }
-
     public JButton getBtnStart() {
         return btnStart;
     }
 
-    public void setBtnStart(JButton btnStart) {
-        this.btnStart = btnStart;
+    public JButton getBtnRestart() {
+        return btnRestart;
     }
 
 }
