@@ -8,7 +8,7 @@
 
 * Definición de la arquitectura del software
 
-Para la arquitectura del software se empleará la arquitectura MVC (modelo, vista, controlador) y debido a que es una aplicación stand alone no es necesario de emplear otro tipo de arquitectura.
+Como patrón arquitectónico de software se empleará MVC (modelo, vista, controlador) y debido a que es una aplicación stand alone no es necesario de emplear otro tipo de patrón arquitectónico.
 
 * Especificación de requerimientos funcionales
 
