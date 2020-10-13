@@ -6,12 +6,9 @@
 package controlador;
 
 import GUI.CronometroUI;
-import GUI.TemporizadorUI;
-import Modelo.CronometroModel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
-import javax.swing.Timer;
 
 /**
  *
@@ -20,7 +17,6 @@ import javax.swing.Timer;
 public class CronometroCtrl implements ActionListener {
 
     private CronometroUI c;
-    private CronometroModel cm;
 
     public CronometroCtrl(CronometroUI cui) {
         this.c = cui;
@@ -59,7 +55,7 @@ public class CronometroCtrl implements ActionListener {
             c.cm.setCs(0);
             c.cm.actualizarLabel();
             while (!pila.isEmpty()) { // mostrar pila completa
-                c.getTiempos().setText(c.getTiempos().getText() + "\n"  + "- " + pila.pop());
+                c.getTiempos().setText(c.getTiempos().getText() + "\n" + "- " + pila.pop());
             }
 
         }

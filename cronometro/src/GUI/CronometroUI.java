@@ -87,7 +87,7 @@ public class CronometroUI extends JFrame {
 
     }
 
-    /**
+    /*
      * *********************************************************
      * Getter and Setter de los componentes
     ***********************************************************
