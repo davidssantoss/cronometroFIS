@@ -8,7 +8,7 @@
 
 * Especificación de requerimientos funcionales
 
-![Especificación de requerimientos funcionales]()
+![Especificación de requerimientos funcionales](https://github.com/davidssantoss/cronometroFIS/blob/main/uml/images/Especificaci%C3%B3n%20de%20requerimientos%20funcionales.PNG)
 
 # Diseño
 
