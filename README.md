@@ -26,12 +26,15 @@ Como patrón arquitectónico de software se empleará MVC (modelo, vista, contro
 
 ![Diagrama de clases](https://github.com/davidssantoss/cronometroFIS/blob/main/uml/images/Diagrama%20de%20clases.PNG)
 
-* Estimación de costo
+## Estimación de costo
 1. Hora desarrollador Senior $100.000
 2. Hora desarrollador Junior $25.000
 
 * Estimación de tiempo
 Ejecución de proyecto 3 días 8 Horas diarias por Dev.
+1. Planeación de arquitectura
+2. Inicio de cronometro
+3. Inicio de temporizador
 
 * Costo total
 $3'000.0000
