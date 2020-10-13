@@ -6,6 +6,9 @@
 
 # Análisis
 
+* Especificación de requerimientos funcionales
+
+![Especificación de requerimientos funcionales]()
 
 # Diseño
 
